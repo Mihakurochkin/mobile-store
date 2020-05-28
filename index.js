@@ -5,6 +5,7 @@ function setProducts(array) {
   products = array;
   update();
 }
+
 let loading = true;
 function setLoading(value) {
   loading = value;
@@ -14,11 +15,14 @@ function setLoading(value) {
 // update
 
 function update() {
-
+  $('#loader').css('display', loading ? 'block' : 'none')
 }
 
 // main code
 
 $(() => {
-  $('#header').css('background', 'red')
+  update();
+  setTimeout(() => {
+    setLoading(false)
+  }, 1000);
 });
