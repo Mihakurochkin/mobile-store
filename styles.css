@@ -2,3 +2,33 @@
     font-size: 50px;
     text-align: center;
 }
+
+#products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.product-photo {
+    height: 100%;
+}
+
+.product-info {
+    width: 200px;
+    margin-left: 10px;
+}
