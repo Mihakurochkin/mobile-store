@@ -1,3 +1,8 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
 #header {
     font-size: 50px;
     text-align: center;
@@ -36,53 +41,34 @@
 #footer {
     display: flex;
     flex-direction: column;
+    padding: 30px;
+    padding-bottom: 5px;
     background-color: #1d1b1f;
     margin-top: 100px;
-    height: 200px;
 }
 
-
-#first {
+#footer-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    color: white;
 }
 
-#links {
+.footer-column {
+    flex: 1;
     display: flex;
     flex-direction: column;
+}
+
+.footer-column > * {
     color: white;
-}
-
-#github {
-    color: white;
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-#gmail {
-    margin-top: 10px;
-}
-
-#numbers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-}
-
-#number-one {
-    margin: 50px;
-}
-
-#number-two {
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+    text-decoration: none;
 }
 
 #last {
     display: flex;
     justify-content: center;
     color: white;
+    padding-top: 20px;
 }
